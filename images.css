@@ -1,0 +1,186 @@
+body{
+    padding-top: 80px;
+}
+.div1{
+    
+    /* background-color: lightblue; */
+    vertical-align: top;            
+}
+
+.img2{
+    width: 300px;
+    
+}
+.img1{
+    width: 100%;
+    height: 300px;
+ 
+    object-fit: cover;
+    object-position: top;
+}
+.image-container{
+    margin-bottom: 15px;
+}
+.profile-picture{
+    width: 50px;
+    border-radius: 20px;
+    height: 50px;
+    object-fit: cover;
+    object-position: top;
+
+}
+.profile-picture:hover{
+    cursor: pointer;
+}
+.profile-pic-container{
+   /* display: inline-block; */
+    width: 100%;
+    vertical-align: top;
+    position: relative;
+
+}
+.profile-pic-container:hover .image-display{
+    opacity: 1;
+}
+.paragraph-container{
+    /* display: inline-block; */
+    width: 100%;
+    margin-top: 0;
+    margin-right: 1px;
+}
+.pic-author{
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+.pic-class{
+    margin-top: 0;
+}
+.general-container{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    column-gap: 5px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background-color: gray;
+    z-index: 100;
+}
+.navigation-link{
+    display: flex;
+    justify-content: space-between;
+}
+.navigation-link div{
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+strong{
+    color: white;
+    font-size: 25px;
+}
+.display-property{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+@media (max-width:990px){
+    .display-property{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width:1200px){
+    .display-property{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+.navmore{
+    position: relative;
+}
+.notify{
+    position: absolute;
+    background-color: red;
+    color: white;
+    top: -8px;
+    right: -20px;
+    font-size: 10px;
+    padding: 3px 5px;
+    border-radius: 30px;
+}
+.homelink,.aboutlink,.loginlink,.registerlink,.navmore{
+    position: relative;
+}
+.homelink,.aboutlink,.loginlink,.registerlink,.navmore:hover{
+    cursor: pointer;
+}
+.homehover,.abouthover,.registerhover,.loginhover,.morehover{
+    position: absolute;
+    font-size: 15px;
+    bottom: -30px;
+    background: black;
+    color: white;
+    opacity: 0;
+    pointer-events: none;
+}
+.homelink:hover .homehover{
+    opacity: 1;
+}
+.aboutlink:hover .abouthover{
+    opacity: 1;
+}
+.registerlink:hover .registerhover{
+    opacity: 1;
+}
+.loginlink:hover .loginhover{
+    opacity: 1;
+}
+.navmore:hover .morehover{
+    opacity: 1;
+}
+.image-display{
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    display: flex;
+    justify-content: space-between;
+    background-color:orangered;
+    left: 30px;
+    bottom: -30px;
+    border-radius: 5px;
+    color: white;
+}
+.paragraph-container-absolute{
+    width: 300px;
+}
+input{
+
+    flex: 1;
+    height: 30px;
+    min-width: 10px;
+}
+.input-div{
+    display: flex;
+    flex: 1;
+    margin-right: 50px;
+    margin-left: 20px;
+    min-width: 20px;
+    
+}
+input::placeholder{
+    padding-left: 20px;
+    font-size: 18px;
+}
+/*         button{
+    height: 34px;
+} */
